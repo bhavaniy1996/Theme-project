@@ -4,8 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:backgroundTint="@color/black"
-    android:background="?android:attr/colorBackground">
+    android:background="@color/black">
 
     <!-- Header -->
     <TextView
@@ -14,7 +13,7 @@
         android:text="MyThemeApp"
         android:textSize="18sp"
         android:textColor="@android:color/white"
-        android:background="?attr/colorPrimary"
+        android:background="@color/material_dynamic_neutral_variant20"
         android:gravity="center"
         android:padding="16dp" />
 
@@ -31,7 +30,7 @@
             android:text="Current Theme: Light"
             android:textColor="@color/white"
             android:textStyle="bold"
-            android:textSize="16sp"
+            android:textSize="20dp"
             android:layout_marginBottom="16dp" />
 
         <Button
@@ -39,23 +38,24 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Light Theme"
-            android:textColor="@color/white"
-            android:backgroundTint="?attr/colorButtonLight"
-            android:layout_marginBottom="8dp" />
+            android:backgroundTint="@color/material_dynamic_neutral_variant60"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="16dp" />
 
         <Button
             android:id="@+id/darkThemeBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Dark Theme"
+            android:backgroundTint="@color/material_dynamic_neutral_variant60"
             android:textColor="@android:color/white"
             android:layout_marginBottom="16dp" />
+
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/black"
-            android:backgroundTint="@color/black"
+            android:backgroundTint="@color/material_dynamic_neutral_variant60"
             app:cardCornerRadius="8dp"
             app:cardElevation="4dp"
             android:layout_marginBottom="16dp">
@@ -83,12 +83,21 @@
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
+<!--        <EditText-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="Enter Title"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:padding="12dp" />-->
+
+
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Enter Title"
-            android:textColor="@color/white"
-            android:background="?attr/colorCard"
+            android:layout_marginTop="300dp"
+            android:background="@color/material_dynamic_neutral_variant60"
             android:padding="12dp" />
+
     </LinearLayout>
 </LinearLayout>

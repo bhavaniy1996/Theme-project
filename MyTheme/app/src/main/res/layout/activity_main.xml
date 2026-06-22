@@ -37,16 +37,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Light Theme"
-            android:backgroundTint="?attr/colorButtonLight"
-            android:textColor="?android:attr/textColor"
-            android:layout_marginBottom="8dp" />
-
+            android:backgroundTint="@color/white"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="16dp" />
         <Button
             android:id="@+id/darkThemeBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Dark Theme"
-            android:backgroundTint="?attr/colorButtonDark"
+            android:backgroundTint="@color/black"
             android:textColor="@android:color/white"
             android:layout_marginBottom="16dp" />
 
@@ -83,6 +82,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Enter Title"
+            android:layout_marginTop="300dp"
             android:background="?attr/colorCard"
             android:padding="12dp" />
     </LinearLayout>
